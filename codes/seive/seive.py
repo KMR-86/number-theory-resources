@@ -1,4 +1,4 @@
-size=1000000
+size=90000000
 l=[1]*(size+1)
 def seive(n):
     l[0]=0
