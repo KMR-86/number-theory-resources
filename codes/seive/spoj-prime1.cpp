@@ -1,38 +1,64 @@
 #include<bits/stdc++.h>
 using namespace std;
-int max_size=1000000001;
-bool a[1000000001];
-void seive(){
-    a[1]=1;
-
-    for(int i=2;i*i<max_size;i++){
-        if(a[i]==0){
-            for(int j=i*i;j<max_size;j=j+i){
-                a[j]=1;
+bool prime_log[1000001];
+vector<int>primes;
+void seive(int n){
+    prime_log[0]=1;
+    prime_log[1]=1;
+    for(int i=2;i*i<n;i++){
+        if(prime_log[i]==0){
+            for(int j=i*i;j<n;j=j+i){
+                prime_log[j]=1;
             }
         }
 
     }
+    for(int i=2;i<n;i++){
+        if(prime_log[i]==0){
+            primes.push_back(i);
+
+        }
+    }
+}
+void segmented_seive(long long int a,long long int b){
+    long long int n;
+    seive(1000000);
+    if(a==1)a++;
+    n=b-a+1;
+    vector <bool> lim(n,0);
+    for(int i=0;i<primes.size()&&primes[i]<b;i++){
+        long long int x;
+        x=a/primes[i];
+        ///if(primes[i]==101)cout<<x<<" ";
+        x=x*primes[i];
+
+        if(x<a)x=x+primes[i];
+
+        for(int j=x-a;j<n;j=j+primes[i]){
+            if(j+a!=primes[i])lim[j]=1;
+        }
+    }
+    for(int i=0;i<n;i++){
+        //cout<<lim[i]<<endl;
+        if(lim[i]==0){
+            cout<<i+a<<endl;
+        }
+    }
+
 
 
 }
-
-
 int main(){
-    seive();
-    int cases;
-    cin>>cases;
-    for(int i=0;i<cases;i++){
-        int b,c;
-        cin>>b>>c;
-        for(int j=b;j<=c;j++){
-            if(a[j]==0){
-                cout<<j<<endl;
-            }
-        }
-        printf("\n");
-    }
 
+int cases;
+cin>>cases;
+for(int i=0;i<cases;i++){
+    int a,b;
+    cin>>a>>b;
+    segmented_seive(a,b);
+    cout<<"\n";
+
+}
 
 
 return 0;
