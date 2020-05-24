@@ -33,4 +33,10 @@ https://www.spoj.com/problems/PRIME1/
 
 https://www.codechef.com/problems/FEXP
 
+5.n-th element of a recurrence relationship in log(n) time
+
+https://www.hackerrank.com/challenges/fibonacci-finding-easy/problem
+
+ 
+
 
