@@ -19,7 +19,6 @@ https://www.spoj.com/problems/TDKPRIME/
 
 https://codeforces.com/problemset/problem/17/A
 
-(not solved yet)
 
 https://codeforces.com/contest/735/problem/D
 
