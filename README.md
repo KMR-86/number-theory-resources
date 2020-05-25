@@ -11,7 +11,6 @@ https://www.hackerearth.com/practice/math/number-theory/primality-tests/practice
 
 https://www.hackerearth.com/practice/math/number-theory/primality-tests/practice-problems/algorithm/micro-and-prime-prime-1/
 
-(not solved yet)
 
 2. Seive of sieve of eratosthenes:
 
