@@ -21,7 +21,6 @@ https://codeforces.com/problemset/problem/17/A
 
 https://codeforces.com/contest/735/problem/D
 
-(not solved yet)
 
 3.Segmented seive:
 
@@ -35,6 +34,11 @@ https://www.codechef.com/problems/FEXP
 
 https://www.hackerrank.com/challenges/fibonacci-finding-easy/problem
 
- 
+6.Goldbach's conjecture:
+
+
+https://codeforces.com/contest/735/problem/D
+
+
 
 
