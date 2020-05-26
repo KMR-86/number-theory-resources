@@ -39,6 +39,12 @@ https://www.hackerrank.com/challenges/fibonacci-finding-easy/problem
 
 https://codeforces.com/contest/735/problem/D
 
+7.GCD:
+
+https://www.codechef.com/submit/GCDQ
+
+
+
 
 
 

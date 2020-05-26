@@ -35,9 +35,15 @@ else if(n==3){
     cout<<"1";
 }
 else if(n==5){
-    cout<<"2";
+    cout<<"1";
 }
 else if(n%2==0){
+    cout<<"2";
+}
+else if(is_prime(n)){
+    cout<<"1";
+}
+else if(is_prime(n-2)){
     cout<<"2";
 }
 else{
