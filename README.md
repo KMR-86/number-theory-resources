@@ -43,6 +43,10 @@ https://codeforces.com/contest/735/problem/D
 
 https://www.codechef.com/submit/GCDQ
 
+https://www.codechef.com/submit/GCDMOD
+
+(partially solved :( )
+
 
 
 
