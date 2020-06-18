@@ -54,8 +54,8 @@ int main()
     scanf("%d",&cases);
     while(cases--)
     {
-        int n;
-        scanf("%d",&n);
+        long long int n;
+        scanf("%lld",&n);
         //n=cases;
         get_div(n);
 
